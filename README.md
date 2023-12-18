@@ -1,1 +1,1 @@
-# platform前端基础框架
+# platform前端基础框架非微服务版本
