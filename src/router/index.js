@@ -115,6 +115,24 @@ export const asyncRouterMap = [
       }
     ]
   },
+  {
+    path:'/work',
+    component: Layout,
+    name:"work",
+    meta: {title:"作品管理",icon: 'ums'},
+    children: [{
+      path: 'workList',
+      name: 'workList',
+      meta: {title: '作品列表'},
+      component: () => import('@/views/home/index'),
+    },
+    {
+      path: 'newsList',
+      name: 'newsList',
+      meta: {title: '动态列表'},
+      component: () => import('@/views/home/index'),
+    }]
+  },
   {path: '*', redirect: '/404', hidden: true}
 ]
 
